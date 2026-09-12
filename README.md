@@ -17,7 +17,7 @@
 <br><br>
 
 ![Repository Status](https://img.shields.io/badge/Status-In%20Progress-yellow?style=flat-square)
-![STEP Classes](https://img.shields.io/badge/STEP%20Classes-4%2F15-blue?style=flat-square)
+![STEP Classes](https://img.shields.io/badge/STEP%20Classes-5%2F15-blue?style=flat-square)
 ![Primary Language](https://img.shields.io/badge/Primary%20Language-Java-orange?style=flat-square)
 
 </div>
@@ -41,9 +41,9 @@ The repository is organized using Git branches so that every week's work remains
 ## Overall Progress
 
 ```text
-4 / 15 Classes Completed
+5 / 15 Classes Completed
 
-██████░░░░░░░░░  26.7%
+███████░░░░░░░░  33.3%
 ```
 
 ### 📚 Class-by-Class Progress
@@ -54,7 +54,7 @@ The repository is organized using Git branches so that every week's work remains
 | 🟢 **Week 02** | `███████████████` 100% | ✅ Complete |
 | 🟢 **Week 03** | `███████████████` 100% | ✅ Complete |
 | 🟢 **Week 04** | `███████████████` 100% | ✅ Complete |
-| ⚪ **Week 05** | `░░░░░░░░░░░░░░░` 0% | 🔜 Upcoming |
+| 🟢 **Week 05** | `███████████████` 100% | ✅ Complete |
 | ⚪ **Week 06** | `░░░░░░░░░░░░░░░` 0% | 🔜 Upcoming |
 | ⚪ **Week 07** | `░░░░░░░░░░░░░░░` 0% | 🔜 Upcoming |
 | ⚪ **Week 08** | `░░░░░░░░░░░░░░░` 0% | 🔜 Upcoming |
@@ -120,6 +120,55 @@ The OOP foundation developed so far includes:
 - [x] `super` keyword
 - [x] Object References
 - [x] Basic Exception Handling
+
+---
+
+
+# 📚 Week 05 — Practice Problems
+
+Week 5 focused on **Java visibility, inheritance, encapsulation, JavaBeans, immutability, and defensive programming**.
+
+### 🔐 Problem 1 — Membership Field Reach Checker
+
+- Classified accessibility for `private`, default/package-private, `protected`, and `public`.
+- Tested access from same class, same package, different package, and subclass contexts.
+- Added modifier-wise summaries of allowed and denied attempts.
+
+### 🏛️ Problem 2 — Reference Desk Subclass Reach
+
+- Extended access-control logic to subclass behavior across packages.
+- Focused on the special `protected` cross-package rule.
+- Distinguished the subclass's own type from the parent type.
+- Implemented **first-denial** scanning that stops at the first denied attempt.
+
+### 📚 Problem 3 — Book Copy Circulation Guard
+
+- Encapsulated inventory state using private fields.
+- Implemented validated `checkOut()` and `checkIn()` methods.
+- Prevented copies from becoming negative.
+- Prevented check-ins beyond the total inventory.
+- Exposed availability through `getCopiesAvailable()`.
+
+### ☕ Problem 4 — LibraryMember JavaBean & Security Answer Property
+
+- Added a public no-argument constructor.
+- Used JavaBean `getX()` / `setX()` naming conventions.
+- Implemented the boolean `isPremiumMember()` convention.
+- Made `membershipId` a **write-once** property.
+- Made `securityAnswer` **write-only**.
+- Applied a deterministic one-way transformation to the security answer.
+
+### 🔒 Problem 5 — Immutable Loan Receipt & Nightly Circulation Ledger
+
+- Used final fields for immutable receipt state.
+- Applied defensive copying to the `bookIds` array.
+- Used a with-style method to create a new receipt when correcting a book ID.
+- Added one-time class-level initialization with a static block.
+- Handled reference-only receipts separately.
+- Processed null entries safely during nightly circulation.
+- Used `instanceof` to distinguish reference-only and regular receipts.
+
+> **Week 5 takeaway:** Java's access modifiers, inheritance rules, JavaBean conventions, encapsulation, immutability, and defensive copying all work together to control how objects can be accessed and modified.
 
 ---
 
@@ -304,7 +353,7 @@ Week 01  ━━━━━━━━━━━━━━━━━━━━ ✅
 Week 02  ━━━━━━━━━━━━━━━━━━━━ ✅
 Week 03  ━━━━━━━━━━━━━━━━━━━━ ✅
 Week 04  ━━━━━━━━━━━━━━━━━━━━ ✅
-Week 05  ──────────────────── 🔜
+Week 05  ━━━━━━━━━━━━━━━━━━━━ ✅
 Week 06  ──────────────────── 🔜
 Week 07  ──────────────────── 🔜
 Week 08  ──────────────────── 🔜
@@ -336,19 +385,19 @@ Week 15  ──────────────────── 🔜
 
 <div align="center">
 
-## `04 / 15`
+## `05 / 15`
 
 ### STEP Classes Completed
 
 ```text
-██████░░░░░░░░░
+███████░░░░░░░░
 
-26.7%
+33.3%
 ```
 
-### 🏆 Weeks 1–4 Complete
+### 🏆 Weeks 1–5 Complete
 
-**Next Target → Week 5 🚀**
+**Next Target → Week 6 🚀**
 
 </div>
 
@@ -405,7 +454,7 @@ Every commit is a record of progress.
 
 <div align="center">
 
-## 🚀 4 / 15 — The Journey Has Just Begun
+## 🚀 5 / 15 — The Journey Continues
 
 ### Made with ☕ Java, 🧠 curiosity & a lot of debugging.
 
